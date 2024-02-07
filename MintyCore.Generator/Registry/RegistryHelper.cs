@@ -585,7 +585,7 @@ public static class RegistryHelper
     private static IEnumerable<INamedTypeSymbol> GetBaseTypes(ITypeSymbol symbol)
     {
         var current = symbol.BaseType;
-        while (current != null)
+        while (current is not null)
         {
             yield return current;
             current = current.BaseType;

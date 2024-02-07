@@ -1,5 +1,5 @@
 ﻿using System;
-using FontStashSharp.Interfaces;
+using MintyCore.FontStashSharp.Interfaces;
 using MintyCore.Graphics.VulkanObjects;
 using MintyCore.Utils;
 using Silk.NET.Vulkan;

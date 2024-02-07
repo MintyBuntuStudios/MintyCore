@@ -88,88 +88,88 @@ public class MtlParser
                     break;
                 case "ka":
                     ExpectExactly(pieces, 3, "Ka");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.AmbientReflectivity = ParseVector3(pieces[1], pieces[2], pieces[3], "Ka");
                     break;
                 case "kd":
                     ExpectExactly(pieces, 3, "Kd");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.DiffuseReflectivity = ParseVector3(pieces[1], pieces[2], pieces[3], "Kd");
                     break;
                 case "ks":
                     ExpectExactly(pieces, 3, "Ks");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.SpecularReflectivity = ParseVector3(pieces[1], pieces[2], pieces[3], "Ks");
                     break;
                 case "ke": // Non-standard?
                     ExpectExactly(pieces, 3, "Ke");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.EmissiveCoefficient = ParseVector3(pieces[1], pieces[2], pieces[3], "Ks");
                     break;
                 case "tf":
                     ExpectExactly(pieces, 3, "Tf");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.TransmissionFilter = ParseVector3(pieces[1], pieces[2], pieces[3], "Tf");
                     break;
                 case "illum":
                     ExpectExactly(pieces, 1, "illum");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.IlluminationModel = ParseInt(pieces[1], "illum");
                     break;
                 case "d": // "Dissolve", or opacity
                     ExpectExactly(pieces, 1, "d");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.Opacity = ParseFloat(pieces[1], "d");
                     break;
                 case "tr": // Transparency
                     ExpectExactly(pieces, 1, "Tr");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.Opacity = 1 - ParseFloat(pieces[1], "Tr");
                     break;
                 case "ns":
                     ExpectExactly(pieces, 1, "Ns");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.SpecularExponent = ParseFloat(pieces[1], "Ns");
                     break;
                 case "sharpness":
                     ExpectExactly(pieces, 1, "sharpness");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.Sharpness = ParseFloat(pieces[1], "sharpness");
                     break;
                 case "ni": // "Index of refraction"
                     ExpectExactly(pieces, 1, "Ni");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.OpticalDensity = ParseFloat(pieces[1], "Ni");
                     break;
                 case "map_ka":
                     ExpectExactly(pieces, 1, "map_ka");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.AmbientTexture = pieces[1];
                     break;
                 case "map_kd":
                     ExpectExactly(pieces, 1, "map_kd");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.DiffuseTexture = pieces[1];
                     break;
                 case "map_ks":
                     ExpectExactly(pieces, 1, "map_ks");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.SpecularColorTexture = pieces[1];
                     break;
                 case "map_bump":
                 case "bump":
                     ExpectExactly(pieces, 1, "map_bump");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.BumpMap = pieces[1];
                     break;
                 case "map_d":
                     ExpectExactly(pieces, 1, "map_d");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.AlphaMap = pieces[1];
                     break;
                 case "map_ns":
                     ExpectExactly(pieces, 1, "map_ns");
-                    Debug.Assert(_currentDefinition != null, nameof(_currentDefinition) + " != null");
+                    Debug.Assert(_currentDefinition is not null, nameof(_currentDefinition) + " is not null");
                     _currentDefinition.SpecularHighlightTexture = pieces[1];
                     break;
 
@@ -182,7 +182,7 @@ public class MtlParser
 
         private void FinalizeCurrentMaterial()
         {
-            if (_currentDefinition != null)
+            if (_currentDefinition is not null)
             {
                 _definitions.Add(_currentDefinition);
                 _currentDefinition = null;

@@ -4,8 +4,8 @@ using System.Drawing;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using FontStashSharp.Interfaces;
 using JetBrains.Annotations;
+using MintyCore.FontStashSharp.Interfaces;
 using MintyCore.Graphics.Render.Data.RegistryWrapper;
 using MintyCore.Registries;
 

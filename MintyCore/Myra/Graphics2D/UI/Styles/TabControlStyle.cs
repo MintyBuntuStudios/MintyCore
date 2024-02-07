@@ -1,0 +1,52 @@
+﻿using MintyCore.Myra.Graphics2D.UI.Selectors;
+
+namespace MintyCore.Myra.Graphics2D.UI.Styles
+{
+	public class TabControlStyle : WidgetStyle
+	{
+		public ImageTextButtonStyle TabItemStyle
+		{
+			get; set;
+		}
+
+		public WidgetStyle ContentStyle
+		{
+			get; set;
+		}
+
+		public int ButtonSpacing
+		{
+			get; set;
+		}
+
+		public int HeaderSpacing
+		{
+			get; set;
+		}
+
+		public TabSelectorPosition TabSelectorPosition
+		{
+			get; set;
+		}
+
+		public TabControlStyle()
+		{
+		}
+
+		public TabControlStyle(TabControlStyle style) : base(style)
+		{
+			TabItemStyle = style.TabItemStyle is not null ? new ImageTextButtonStyle(style.TabItemStyle) : null;
+			ContentStyle = style.ContentStyle is not null ? new WidgetStyle(style.ContentStyle) : null;
+
+			ButtonSpacing = style.ButtonSpacing;
+			HeaderSpacing = style.HeaderSpacing;
+
+			TabSelectorPosition = style.TabSelectorPosition;
+		}
+
+		public override WidgetStyle Clone()
+		{
+			return new TabControlStyle(this);
+		}
+	}
+}

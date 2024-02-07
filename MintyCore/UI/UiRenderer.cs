@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Drawing;
 using System.Numerics;
-using System.Threading;
-using FontStashSharp;
-using FontStashSharp.Interfaces;
 using JetBrains.Annotations;
+using MintyCore.FontStashSharp;
+using MintyCore.FontStashSharp.Interfaces;
 using MintyCore.Graphics.Managers;
 using MintyCore.Graphics.Render.Managers;
 using MintyCore.Identifications;
+using MintyCore.Myra.Graphics2D;
+using MintyCore.Myra.Platform;
 using MintyCore.Utils;
-using Myra.Graphics2D;
-using Myra.Platform;
 
 namespace MintyCore.UI;
 

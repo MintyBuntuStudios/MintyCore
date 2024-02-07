@@ -10,8 +10,6 @@ using JetBrains.Annotations;
 using MintyCore.Graphics.Managers;
 using MintyCore.Graphics.Utils;
 using MintyCore.Graphics.VulkanObjects;
-using MintyCore.Identifications;
-using MintyCore.Registries;
 using MintyCore.Utils;
 using Silk.NET.Core.Native;
 using Silk.NET.Maths;

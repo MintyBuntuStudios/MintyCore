@@ -14,7 +14,7 @@ internal partial class TextureManager
     private readonly List<FontTextureWrapper> _managedTextures = new();
     
     /// <inheritdoc />
-    public unsafe object CreateTexture(int width, int height)
+    public unsafe FontTextureWrapper CreateTexture(int width, int height)
     {
         var description = TextureDescription.Texture2D((uint)width, (uint)height, 1, 1, Format.R8G8B8A8Unorm,
             TextureUsage.Sampled);

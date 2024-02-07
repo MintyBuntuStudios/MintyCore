@@ -6,7 +6,7 @@
         <StartupObject>MintyCore.Engine</StartupObject>
         <Nullable>enable</Nullable>
         <WarningsAsErrors>Nullable</WarningsAsErrors>
-        <ApplicationIcon />
+        <ApplicationIcon/>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
         <PackageVersion>0.5.0.1-alpha</PackageVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -21,14 +21,15 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
         <NoWarn>1701;1702</NoWarn>
-        <DefineConstants>TRACE</DefineConstants>
+        <DefineConstants>TRACE;PLATFORM_AGNOSTIC</DefineConstants>
         <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
         <PlatformTarget>x64</PlatformTarget>
+        <WarningsAsErrors>SYSLIB0011;SYSLIB0011;Nullable</WarningsAsErrors>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <DefineConstants>TRACE</DefineConstants>
+        <DefineConstants>TRACE;PLATFORM_AGNOSTIC</DefineConstants>
         <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
         <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
         <PlatformTarget>x64</PlatformTarget>
@@ -37,58 +38,67 @@
 
 
     <ItemGroup>
-        <Folder Include="Lib\" />
-        
-        <EmbeddedResource Include="**\*.sbncs" />
-        <Compile Include="..\SharedCode\**\*.cs" Link="Shared\%(RecursiveDir)%(Filename)%(Extension)" />
+        <Folder Include="FontStashSharp\Properties\" />
+        <Folder Include="Lib\"/>
+
+        <EmbeddedResource Include="**\*.sbncs"/>
+        <EmbeddedResource Include="Resources\**"/>
+        <Compile Include="..\SharedCode\**\*.cs" Link="Shared\%(RecursiveDir)%(Filename)%(Extension)"/>
+        <Compile Remove="FontStashSharp\Properties\AssemblyInfo.cs" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="AsyncFixer" Version="1.6.0">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Autofac" Version="7.1.0" />
-        <PackageReference Include="BepuPhysics" Version="2.4.0" />
-        <PackageReference Include="ENet-CSharp" Version="2.4.8" />
-        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
-        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0" />
-        <PackageReference Include="Myra.PlatformAgnostic" Version="1.5.3" />
-        <PackageReference Include="NativeLibraryLoader" Version="1.0.13" />
-        <PackageReference Include="OneOf" Version="3.0.263" />
-        <PackageReference Include="QuikGraph" Version="2.5.0" />
-        <PackageReference Include="Serilog" Version="3.0.1" />
-        <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
-        <PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0" />
-        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
-        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
-        <PackageReference Include="Silk.NET.Input" Version="2.17.0" />
-        <PackageReference Include="Silk.NET.Vulkan" Version="2.17.0" />
-        <PackageReference Include="Silk.NET.Vulkan.Extensions.EXT" Version="2.17.0" />
-        <PackageReference Include="Silk.NET.Vulkan.Extensions.KHR" Version="2.17.0" />
-        <PackageReference Include="SixLabors.Fonts" Version="1.0.0-beta16" />
-        <PackageReference Include="SixLabors.ImageSharp" Version="2.1.4" />
-        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta14" />
-        <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
-        <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="7.0.0-preview.2.22152.2" />
-        
-        <ProjectReference Include="..\MintyCore.Generator\MintyCore.Generator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
+        <PackageReference Include="Autofac" Version="7.1.0"/>
+        <PackageReference Include="BepuPhysics" Version="2.4.0"/>
+        <PackageReference Include="Cyotek.Drawing.BitmapFont" Version="2.0.4" />
+        <PackageReference Include="ENet-CSharp" Version="2.4.8"/>
+        <PackageReference Include="FontStashSharp.Base" Version="1.1.9" />
+        <PackageReference Include="FontStashSharp.Rasterizers.StbTrueTypeSharp" Version="1.1.9" />
+        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1"/>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0"/>
+        <PackageReference Include="NativeLibraryLoader" Version="1.0.13"/>
+        <PackageReference Include="OneOf" Version="3.0.263"/>
+        <PackageReference Include="QuikGraph" Version="2.5.0"/>
+        <PackageReference Include="Serilog" Version="3.0.1"/>
+        <PackageReference Include="Serilog.Exceptions" Version="8.4.0"/>
+        <PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0"/>
+        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0"/>
+        <PackageReference Include="Silk.NET.Input" Version="2.17.0"/>
+        <PackageReference Include="Silk.NET.Vulkan" Version="2.17.0"/>
+        <PackageReference Include="Silk.NET.Vulkan.Extensions.EXT" Version="2.17.0"/>
+        <PackageReference Include="Silk.NET.Vulkan.Extensions.KHR" Version="2.17.0"/>
+        <PackageReference Include="SixLabors.Fonts" Version="1.0.0-beta16"/>
+        <PackageReference Include="SixLabors.ImageSharp" Version="2.1.4"/>
+        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta14"/>
+        <PackageReference Include="System.Numerics.Vectors" Version="4.5.0"/>
+        <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="7.0.0-preview.2.22152.2"/>
+
+        <PackageReference Include="AssetManagementBase" Version="0.6.6"/>
+        <PackageReference Include="info.lundin.math.dll" Version="1.2.6"/>
+        <PackageReference Include="StbImageSharp" Version="2.27.13"/>
+
+        <ProjectReference Include="..\MintyCore.Generator\MintyCore.Generator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="Utils\SerializerExtensions.cs" />
+        <Compile Remove="Utils\SerializerExtensions.cs"/>
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="UI\shaders\ui.frag.spv" />
-      <EmbeddedResource Include="UI\shaders\ui.frag.spv" />
-      <None Remove="UI\shaders\ui.vert.spv" />
-      <EmbeddedResource Include="UI\shaders\ui.vert.spv" />
+        <None Remove="UI\shaders\ui.frag.spv"/>
+        <EmbeddedResource Include="UI\shaders\ui.frag.spv"/>
+        <None Remove="UI\shaders\ui.vert.spv"/>
+        <EmbeddedResource Include="UI\shaders\ui.vert.spv"/>
     </ItemGroup>
 
     <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
         <ItemGroup>
-            <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+            <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))"/>
         </ItemGroup>
     </Target>
 

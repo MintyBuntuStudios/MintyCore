@@ -514,7 +514,7 @@ public unsafe struct MemoryBlock : IEquatable<MemoryBlock>
     public void* BlockMappedPointer => (byte*)BaseMappedPointer + Offset;
 
     /// <summary />
-    public bool IsPersistentMapped => BaseMappedPointer != null;
+    public bool IsPersistentMapped => BaseMappedPointer is not null;
 
     public bool IsAddressable { get; init; }
 

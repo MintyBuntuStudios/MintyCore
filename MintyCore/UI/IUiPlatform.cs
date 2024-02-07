@@ -1,4 +1,4 @@
-﻿using Myra.Platform;
+﻿using MintyCore.Myra.Platform;
 using Silk.NET.Maths;
 
 namespace MintyCore.UI;

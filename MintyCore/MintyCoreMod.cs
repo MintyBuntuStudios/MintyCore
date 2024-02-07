@@ -1,6 +1,5 @@
 ﻿using System;
 using MintyCore.Graphics;
-using MintyCore.Graphics.Render.Data.RegistryWrapper;
 using MintyCore.Modding;
 using MintyCore.Registries;
 using Silk.NET.Vulkan;
