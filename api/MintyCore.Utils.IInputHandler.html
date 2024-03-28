@@ -1,0 +1,782 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+    
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IInputHandler
+     </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IInputHandler
+     ">
+      <meta name="generator" content="docfx 2.59.4.0">
+      
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/discord.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+      
+      
+      
+    </head>
+    <body>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+            
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="" class="logomark">
+              <span class="brand-title"></span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+                    
+                    <div>
+                      <div class="mobile-hide">
+                        
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="" class="logomark">
+                          <span class="brand-title"></span>
+                        </a>  </div>
+                    
+                    
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+                        
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+                  
+                  <strong><a href='https://dotnet.github.io/docfx/'>DocFX</a> + <a href='https://www.singulink.com'>Singulink</a> = ♥</strong>
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div role="main" class="hide-when-search">
+                        
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                    <article class="content wrap" id="_content" data-uid="MintyCore.Utils.IInputHandler">
+  
+  
+  <h1 id="MintyCore_Utils_IInputHandler" data-uid="MintyCore.Utils.IInputHandler" class="text-break">Interface IInputHandler
+  </h1>
+  <div class="markdown level0 summary"><p>Input handler for handling keyboard and mouse input</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MintyCore.Utils.html">MintyCore.Utils</a></h6>
+  <h6><strong>Assembly</strong>: MintyCore.dll</h6>
+  <h5 id="MintyCore_Utils_IInputHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IInputHandler</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_MouseDelta.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.MouseDelta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L26">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_MouseDelta_" data-uid="MintyCore.Utils.IInputHandler.MouseDelta*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_MouseDelta" data-uid="MintyCore.Utils.IInputHandler.MouseDelta">MouseDelta</h4>
+  <div class="markdown level1 summary"><p>Get the current MouseDelta</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector2 MouseDelta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Numerics.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_MousePosition.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.MousePosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L21">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_MousePosition_" data-uid="MintyCore.Utils.IInputHandler.MousePosition*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_MousePosition" data-uid="MintyCore.Utils.IInputHandler.MousePosition">MousePosition</h4>
+  <div class="markdown level1 summary"><p>Get the current MousePosition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector2 MousePosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Numerics.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_ScrollWheelDelta.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.ScrollWheelDelta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L16">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_ScrollWheelDelta_" data-uid="MintyCore.Utils.IInputHandler.ScrollWheelDelta*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_ScrollWheelDelta" data-uid="MintyCore.Utils.IInputHandler.ScrollWheelDelta">ScrollWheelDelta</h4>
+  <div class="markdown level1 summary"><p>The delta of the scroll wheel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector2 ScrollWheelDelta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Numerics.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_AddKeyAction_MintyCore_Utils_Identification_Silk_NET_Input_Key_MintyCore_Utils_IInputHandler_OnKeyPressedDelegate_.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.AddKeyAction(MintyCore.Utils.Identification%2CSilk.NET.Input.Key%2CMintyCore.Utils.IInputHandler.OnKeyPressedDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L67">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_AddKeyAction_" data-uid="MintyCore.Utils.IInputHandler.AddKeyAction*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_AddKeyAction_MintyCore_Utils_Identification_Silk_NET_Input_Key_MintyCore_Utils_IInputHandler_OnKeyPressedDelegate_" data-uid="MintyCore.Utils.IInputHandler.AddKeyAction(MintyCore.Utils.Identification,Silk.NET.Input.Key,MintyCore.Utils.IInputHandler.OnKeyPressedDelegate)">AddKeyAction(Identification, Key, IInputHandler.OnKeyPressedDelegate)</h4>
+  <div class="markdown level1 summary"><p>Adds a Keyboard Key with action to the registry</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddKeyAction(Identification id, Key key, IInputHandler.OnKeyPressedDelegate action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MintyCore.Utils.Identification.html">Identification</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Silk.NET.Input.Key</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MintyCore.Utils.IInputHandler.OnKeyPressedDelegate.html">IInputHandler.OnKeyPressedDelegate</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_AddKeyAction_MintyCore_Utils_Identification_Silk_NET_Input_MouseButton_MintyCore_Utils_IInputHandler_OnKeyPressedDelegate_.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.AddKeyAction(MintyCore.Utils.Identification%2CSilk.NET.Input.MouseButton%2CMintyCore.Utils.IInputHandler.OnKeyPressedDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L75">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_AddKeyAction_" data-uid="MintyCore.Utils.IInputHandler.AddKeyAction*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_AddKeyAction_MintyCore_Utils_Identification_Silk_NET_Input_MouseButton_MintyCore_Utils_IInputHandler_OnKeyPressedDelegate_" data-uid="MintyCore.Utils.IInputHandler.AddKeyAction(MintyCore.Utils.Identification,Silk.NET.Input.MouseButton,MintyCore.Utils.IInputHandler.OnKeyPressedDelegate)">AddKeyAction(Identification, MouseButton, IInputHandler.OnKeyPressedDelegate)</h4>
+  <div class="markdown level1 summary"><p>Adds a Mouse Button Key with action to the Registry</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddKeyAction(Identification id, MouseButton mouseButton, IInputHandler.OnKeyPressedDelegate action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MintyCore.Utils.Identification.html">Identification</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Silk.NET.Input.MouseButton</span></td>
+        <td><span class="parametername">mouseButton</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MintyCore.Utils.IInputHandler.OnKeyPressedDelegate.html">IInputHandler.OnKeyPressedDelegate</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_AddOnCharReceived_System_Action_System_Char__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.AddOnCharReceived(System.Action%7BSystem.Char%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L82">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_AddOnCharReceived_" data-uid="MintyCore.Utils.IInputHandler.AddOnCharReceived*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_AddOnCharReceived_System_Action_System_Char__" data-uid="MintyCore.Utils.IInputHandler.AddOnCharReceived(System.Action{System.Char})">AddOnCharReceived(Action&lt;Char&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a callback to be executed when a char is received
+IMPORTANT: Remember to remove the callback when not longer needed as this will otherwise break mod unloading</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddOnCharReceived(Action&lt;char&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_AddOnKeyDown_System_Action_Silk_NET_Input_Key__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.AddOnKeyDown(System.Action%7BSilk.NET.Input.Key%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L95">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_AddOnKeyDown_" data-uid="MintyCore.Utils.IInputHandler.AddOnKeyDown*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_AddOnKeyDown_System_Action_Silk_NET_Input_Key__" data-uid="MintyCore.Utils.IInputHandler.AddOnKeyDown(System.Action{Silk.NET.Input.Key})">AddOnKeyDown(Action&lt;Key&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a callback to be executed when a key is pressed
+IMPORTANT: Remember to remove the callback when not longer needed as this will otherwise break mod unloading</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddOnKeyDown(Action&lt;Key&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Silk.NET.Input.Key</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_AddOnKeyRepeat_System_Action_Silk_NET_Input_Key__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.AddOnKeyRepeat(System.Action%7BSilk.NET.Input.Key%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L121">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_AddOnKeyRepeat_" data-uid="MintyCore.Utils.IInputHandler.AddOnKeyRepeat*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_AddOnKeyRepeat_System_Action_Silk_NET_Input_Key__" data-uid="MintyCore.Utils.IInputHandler.AddOnKeyRepeat(System.Action{Silk.NET.Input.Key})">AddOnKeyRepeat(Action&lt;Key&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a callback to be executed when a key is repeated
+IMPORTANT: Remember to remove the callback when not longer needed as this will otherwise break mod unloading</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddOnKeyRepeat(Action&lt;Key&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Silk.NET.Input.Key</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_AddOnKeyUp_System_Action_Silk_NET_Input_Key__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.AddOnKeyUp(System.Action%7BSilk.NET.Input.Key%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L108">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_AddOnKeyUp_" data-uid="MintyCore.Utils.IInputHandler.AddOnKeyUp*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_AddOnKeyUp_System_Action_Silk_NET_Input_Key__" data-uid="MintyCore.Utils.IInputHandler.AddOnKeyUp(System.Action{Silk.NET.Input.Key})">AddOnKeyUp(Action&lt;Key&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a callback to be executed when a key is released
+IMPORTANT: Remember to remove the callback when not longer needed as this will otherwise break mod unloading</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddOnKeyUp(Action&lt;Key&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Silk.NET.Input.Key</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_GetKeyDown_Silk_NET_Input_Key_.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.GetKeyDown(Silk.NET.Input.Key)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L43">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_GetKeyDown_" data-uid="MintyCore.Utils.IInputHandler.GetKeyDown*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_GetKeyDown_Silk_NET_Input_Key_" data-uid="MintyCore.Utils.IInputHandler.GetKeyDown(Silk.NET.Input.Key)">GetKeyDown(Key)</h4>
+  <div class="markdown level1 summary"><p>Get the current down state for <span class="xref">Silk.NET.Input.Key</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetKeyDown(Key key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Silk.NET.Input.Key</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_GetMouseDown_Silk_NET_Input_MouseButton_.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.GetMouseDown(Silk.NET.Input.MouseButton)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L48">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_GetMouseDown_" data-uid="MintyCore.Utils.IInputHandler.GetMouseDown*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_GetMouseDown_Silk_NET_Input_MouseButton_" data-uid="MintyCore.Utils.IInputHandler.GetMouseDown(Silk.NET.Input.MouseButton)">GetMouseDown(MouseButton)</h4>
+  <div class="markdown level1 summary"><p>Get the current down state of a <span class="xref">Silk.NET.Input.MouseButton</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetMouseDown(MouseButton mouseButton)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Silk.NET.Input.MouseButton</span></td>
+        <td><span class="parametername">mouseButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_KeyClear.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.KeyClear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L53">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_KeyClear_" data-uid="MintyCore.Utils.IInputHandler.KeyClear*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_KeyClear" data-uid="MintyCore.Utils.IInputHandler.KeyClear">KeyClear()</h4>
+  <div class="markdown level1 summary"><p>Clears the Key and Mouse button dictionaries</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void KeyClear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_RemoveKeyAction_MintyCore_Utils_Identification_.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.RemoveKeyAction(MintyCore.Utils.Identification)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L59">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_RemoveKeyAction_" data-uid="MintyCore.Utils.IInputHandler.RemoveKeyAction*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_RemoveKeyAction_MintyCore_Utils_Identification_" data-uid="MintyCore.Utils.IInputHandler.RemoveKeyAction(MintyCore.Utils.Identification)">RemoveKeyAction(Identification)</h4>
+  <div class="markdown level1 summary"><p>Removes a Key or Mouse button action via ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveKeyAction(Identification id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MintyCore.Utils.Identification.html">Identification</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_RemoveOnCharReceived_System_Action_System_Char__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.RemoveOnCharReceived(System.Action%7BSystem.Char%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L88">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_RemoveOnCharReceived_" data-uid="MintyCore.Utils.IInputHandler.RemoveOnCharReceived*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_RemoveOnCharReceived_System_Action_System_Char__" data-uid="MintyCore.Utils.IInputHandler.RemoveOnCharReceived(System.Action{System.Char})">RemoveOnCharReceived(Action&lt;Char&gt;)</h4>
+  <div class="markdown level1 summary"><p>Remove a callback from the list of callbacks to be executed when a char is received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveOnCharReceived(Action&lt;char&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_RemoveOnKeyDown_System_Action_Silk_NET_Input_Key__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.RemoveOnKeyDown(System.Action%7BSilk.NET.Input.Key%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L101">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_RemoveOnKeyDown_" data-uid="MintyCore.Utils.IInputHandler.RemoveOnKeyDown*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_RemoveOnKeyDown_System_Action_Silk_NET_Input_Key__" data-uid="MintyCore.Utils.IInputHandler.RemoveOnKeyDown(System.Action{Silk.NET.Input.Key})">RemoveOnKeyDown(Action&lt;Key&gt;)</h4>
+  <div class="markdown level1 summary"><p>Remove a callback from the list of callbacks to be executed when a key is pressed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveOnKeyDown(Action&lt;Key&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Silk.NET.Input.Key</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_RemoveOnKeyRepeat_System_Action_Silk_NET_Input_Key__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.RemoveOnKeyRepeat(System.Action%7BSilk.NET.Input.Key%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L127">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_RemoveOnKeyRepeat_" data-uid="MintyCore.Utils.IInputHandler.RemoveOnKeyRepeat*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_RemoveOnKeyRepeat_System_Action_Silk_NET_Input_Key__" data-uid="MintyCore.Utils.IInputHandler.RemoveOnKeyRepeat(System.Action{Silk.NET.Input.Key})">RemoveOnKeyRepeat(Action&lt;Key&gt;)</h4>
+  <div class="markdown level1 summary"><p>Remove a callback from the list of callbacks to be executed when a key is repeated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveOnKeyRepeat(Action&lt;Key&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Silk.NET.Input.Key</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_RemoveOnKeyUp_System_Action_Silk_NET_Input_Key__.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.RemoveOnKeyUp(System.Action%7BSilk.NET.Input.Key%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L114">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_RemoveOnKeyUp_" data-uid="MintyCore.Utils.IInputHandler.RemoveOnKeyUp*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_RemoveOnKeyUp_System_Action_Silk_NET_Input_Key__" data-uid="MintyCore.Utils.IInputHandler.RemoveOnKeyUp(System.Action{Silk.NET.Input.Key})">RemoveOnKeyUp(Action&lt;Key&gt;)</h4>
+  <div class="markdown level1 summary"><p>Remove a callback from the list of callbacks to be executed when a key is released</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveOnKeyUp(Action&lt;Key&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Silk.NET.Input.Key</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_Setup_Silk_NET_Input_IMouse_Silk_NET_Input_IKeyboard_.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.Setup(Silk.NET.Input.IMouse%2CSilk.NET.Input.IKeyboard)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L33">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_Setup_" data-uid="MintyCore.Utils.IInputHandler.Setup*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_Setup_Silk_NET_Input_IMouse_Silk_NET_Input_IKeyboard_" data-uid="MintyCore.Utils.IInputHandler.Setup(Silk.NET.Input.IMouse,Silk.NET.Input.IKeyboard)">Setup(IMouse, IKeyboard)</h4>
+  <div class="markdown level1 summary"><p>Initialize the input handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Setup(IMouse mouse, IKeyboard keyboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Silk.NET.Input.IMouse</span></td>
+        <td><span class="parametername">mouse</span></td>
+        <td><p>The mouse instance to use </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Silk.NET.Input.IKeyboard</span></td>
+        <td><span class="parametername">keyboard</span></td>
+        <td><p>The keyboard instance to use </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/new/master/apiSpec/new?filename=MintyCore_Utils_IInputHandler_Update_System_Single_.md&amp;value=---%0Auid%3A%20MintyCore.Utils.IInputHandler.Update(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MintyBuntuStudios/MintyCore/blob/master/MintyCore/Utils/IInputHandler.cs/#L38">View Source</a>
+  </span>
+  <a id="MintyCore_Utils_IInputHandler_Update_" data-uid="MintyCore.Utils.IInputHandler.Update*"></a>
+  <h4 id="MintyCore_Utils_IInputHandler_Update_System_Single_" data-uid="MintyCore.Utils.IInputHandler.Update(System.Single)">Update(Single)</h4>
+  <div class="markdown level1 summary"><p>Update the input handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Update(float deltaTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                </div>
+
+            </main>
+        </div>
+
+        
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>    </body>
+</html>
